@@ -253,7 +253,7 @@ module.exports = {
       const chan = guild.channels.cache.get(interaction.channelId);
 
       interaction.reply({
-        content: 'Guardando...'
+        content: 'El ticket fue registrado.'
       });
 
       chan.messages.fetch().then(async (messages) => {
@@ -274,7 +274,7 @@ module.exports = {
 
             const embed2 = new client.discord.MessageEmbed()
               .setAuthor('Registro del ticket.', ' ')
-              .setDescription(`📰 Registro de tu ticket. \`${chan.id}\`: [**Click aquí para ver el log de tu ticket.*(${urlToPaste})`)
+              .setDescription(`📰 Registro de tu ticket. \`${chan.id}\`: [**Click aquí para ver el log de tu ticket.**](${urlToPaste})`)
               .setColor('2f3136')
               .setTimestamp();
 
@@ -284,7 +284,7 @@ module.exports = {
             client.users.cache.get(chan.topic).send({
               embeds: [embed2]
             }).catch(() => {console.log('El DM no fue enviado')});
-            chan.send('Eliminad el canal.');
+            chan.send('Eliminando el canal...');
 
             setTimeout(() => {
               chan.delete();

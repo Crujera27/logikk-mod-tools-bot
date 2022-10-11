@@ -3,7 +3,7 @@ module.exports = {
   async execute(client) {
     console.log('pterodactyl, bot started');
     client.user.setActivity('Logikk\'s Discord', {type: "WATCHING"});
-    const oniChan = client.channels.cache.get(client.config.ticketChannel)
+    const conftchannel = client.channels.cache.get(client.config.ticketChannel)
 
     function sendTicketMSG() {
       const embed = new client.discord.MessageEmbed()
@@ -20,7 +20,7 @@ module.exports = {
           .setStyle('PRIMARY'),
         );
 
-      oniChan.send({
+      conftchannel.send({
         embeds: [embed],
         components: [row]
       })
@@ -65,7 +65,7 @@ module.exports = {
       return collection;
     }
 
-    const list = await fetchMore(oniChan, toDelete);
+    const list = await fetchMore(conftchannel, toDelete);
 
     let i = 1;
 

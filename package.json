@@ -6,23 +6,15 @@
     "discord.js": "^13.2.0",
     "hastebin": "^0.2.1"
   },
-  "name": "ticket-bot",
+  "name": "logikk-ticket-bot",
   "version": "1.0.0",
-  "description": "Bot with a ticket system using Discord.js v13",
+  "description": "Private v13 moderation Bot for Logikk's Discord",
   "main": "main.js",
   "devDependencies": {},
   "scripts": {
     "start": "node main.js",
     ".": "node main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sayrix/ticket-bot.git"
-  },
-  "author": "Sayrix (github.com/Sayrix)",
-  "license": "Apache License 2.0",
-  "bugs": {
-    "url": "https://github.com/Sayrix/ticket-bot/issues"
-  },
-  "homepage": "https://github.com/Sayrix/ticket-bot#readme"
+  "author": "Crujera27",
+  "license": "ISC"
 }
