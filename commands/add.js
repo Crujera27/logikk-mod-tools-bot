@@ -5,7 +5,7 @@ const {
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('add')
-    .setDescription('add a user')
+    .setDescription('(Ticket) Agregar usuario')
     .addUserOption(option =>
       option.setName('target')
       .setDescription('Añade a un usuario al ticket.')
