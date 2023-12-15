@@ -1,18 +1,19 @@
 {
-  "clientId": "796058226344329276",
+  "clientId": "ID-DEL-CLIENTE",
+  "hasteServer": "https://haste-url.example.com",
 
 
-  "ReportarUsuario": "1028669604442148915",
-  "Reportarstaff": "1028669604442148915",
-  "Duda": "1028669604442148915",
-  "Reclamarpremio": "1028669604442148915",
-  "parentOpened": "1028669604442148915",
+  "ReportarUsuario": "ID-CATEGORÍA",
+  "Reportarstaff": "ID-CATEGORÍA",
+  "Duda": "ID-CATEGORÍA",
+  "Reclamarpremio": "ID-CATEGORÍA",
+  "parentOpened": "ID-CATEGORÍA",
 
-  "roleSupport": "963425076382924830",
+  "roleSupport": "ID-CATEGORÍA",
 
   
-  "logsTicket": "1028669104623714385",
-  "ticketChannel": "928733150467735642",
+  "logsTicket": "ID-CATEGORÍA",
+  "ticketChannel": "ID-CATEGORÍA",
 
-  "footerText": "Logikk's Discord Support"
+  "footerText": "Logikk's Tickets - https://github.com/Crujera27/logikk-mod-tools-bot"
 }

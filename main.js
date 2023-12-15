@@ -1,3 +1,16 @@
+/*
+.____                 .__ __    __     ___________           .__          
+|    |    ____   ____ |__|  | _|  | __ \__    ___/___   ____ |  |   ______
+|    |   /  _ \ / ___\|  |  |/ /  |/ /   |    | /  _ \ /  _ \|  |  /  ___/
+|    |__(  <_> ) /_/  >  |    <|    <    |    |(  <_> |  <_> )  |__\___ \ 
+|_______ \____/\___  /|__|__|_ \__|_ \   |____| \____/ \____/|____/____  >
+        \/    /_____/         \/    \/                                 \/  v1
+  Copyright © (c) 2023 Crujera27
+    Licencia: MIT
+    GitHub: https://github.com/Crujera27
+    Web: https://crujera.galnod.com
+    Repositorio del proyecto: https://github.com/Crujera27/logikk-mod-tools-bot
+*/
 const fs = require('fs');
 const {
   Client,
@@ -29,8 +42,8 @@ const rest = new REST({
 }).setToken(t.token);
 
 rest.put(Routes.applicationCommands(clientId), {
-    body: slashcommands
-  })
+  body: slashcommands
+})
   .then(() => console.log('Comandos enviados a Discord por gmail.'))
   .catch(console.error);
 
@@ -54,7 +67,7 @@ const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'
 
 for (const file of eventFiles) {
   const event = require(`./events/${file}`);
-    client.on(event.name, (...args) => event.execute(...args, client));
+  client.on(event.name, (...args) => event.execute(...args, client));
 };
 
 client.on('interactionCreate', async interaction => {

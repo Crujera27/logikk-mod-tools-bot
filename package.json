@@ -7,7 +7,7 @@
     "hastebin": "^0.2.1"
   },
   "name": "logikk-ticket-bot",
-  "version": "1.0.0",
+  "version": "1.0.13",
   "description": "Private v13 moderation Bot for Logikk's Discord",
   "main": "main.js",
   "devDependencies": {},
@@ -16,5 +16,5 @@
     ".": "node main.js"
   },
   "author": "Crujera27",
-  "license": "ISC"
+  "license": "MIT"
 }
